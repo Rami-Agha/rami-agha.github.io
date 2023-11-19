@@ -1,0 +1,217 @@
+body 
+{
+  margin: 0;
+  padding: 0;
+  height: 100dvh;
+
+}
+
+/* This is the Nav bar */
+.navbar 
+{
+  background-color: blueviolet;
+  border: solid black 5px;
+  width: 100%;
+}
+
+.navbar-link
+{
+  display: flex;
+  justify-content: space-around;
+  flex: end;
+  border: solid white 5px;
+}
+
+/* This will go to the leftand all of the othere elements will go on the right */
+.navbar-links1
+{
+  position: relative;
+  right: 80px;
+  border: solid red 5px;
+}
+
+/* This is the intro to the page */
+.header
+{
+  float: left;
+  width: 170px;
+  margin: 0 10px auto;
+  position: relative;
+  top: 30px;
+}
+
+.dev
+{
+  width: 10%;
+  border-radius: 50px;
+}
+
+.intro
+{
+  margin: 15px auto;
+  width: 50%;
+}
+/* icons for the tools I have used */
+table 
+{
+  width: auto;
+  border-collapse: collapse;
+  margin: auto; 
+  float: center;
+}
+
+td 
+{
+  text-align: center;
+  padding: 10px;
+}
+
+.icon 
+{
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+}
+
+.icon-name 
+{
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/* Contact info */
+.contact-info
+{
+  text-align: center;
+}
+
+.contact
+{
+  box-shadow: inset 0 0 0 0 #17C3B2; 
+  transition: color 1s ease-in-out, box-shadow 1.0s ease-in-out;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: solid #17C3B2;
+  border-radius: 5px;
+  /* margin: 10px 30px 10px 10px; */
+}
+
+.contact:hover 
+{
+  box-shadow: inset 10000px 0 0 0 #17C3B2;
+  color: white;
+}
+
+button 
+{
+  padding: 0.8em 1.8em;
+  border: 2px solid #17C3B2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17C3B2;
+ }
+ 
+ button::before 
+ {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17C3B2;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ button:hover::before 
+ {
+  width: 105%;
+ }
+ 
+ button:hover {
+  color: #111;
+ }
+ 
+ /* about me and my work after adding in the text wrap everny single (stycke) and give it a border radius and a diffrien color background */
+ .about-me-wrapper
+ {
+  text-align: center;
+  border-radius: 15px;
+  border: solid black 5px;
+  margin: 10px 30px 10px;
+  font-family: inherit;
+  color: #17C3B2;
+ }
+/* content for about me */
+.about
+{
+box-shadow: inset 0 0 0 0 #17C3B2; 
+transition: color 1s ease-in-out, box-shadow 1.0s ease-in-out;
+}
+
+.about:hover 
+{
+box-shadow: inset 10000px 0 0 0 #17C3B2;
+color: white;
+min-width: 100%;
+}
+
+.about-2
+{
+ box-shadow: inset 0 0 0 0 #17C3B2; 
+ transition: color 1s ease-in-out, box-shadow 1.0s ease-in-out;
+}
+
+.about-2:hover 
+{
+ box-shadow: inset 10000px 0 0 0 #17C3B2;
+ color: white;
+ min-width: 100%;
+}
+
+.project
+{
+ box-shadow: inset 0 0 0 0 #17C3B2; 
+ transition: color 1s ease-in-out, box-shadow 1.0s ease-in-out;
+}
+
+.project:hover 
+{
+ box-shadow: inset 10000px 0 0 0 #17C3B2;
+ color: white;
+ min-width: 100%;
+}
+
+.current
+{
+ box-shadow: inset 0 0 0 0 #17C3B2; 
+ transition: color 1s ease-in-out, box-shadow 1.0s ease-in-out;
+}
+
+.current:hover 
+{
+ box-shadow: inset 10000px 0 0 0 #17C3B2;
+ color: white;
+ min-width: 100%;
+}
+
+#footer{
+  margin: 0 auto;
+}
+@media screen and (max-width: 450px) {
+  .navbar {
+    display: none;
+  } 
+}
+
+ /* commit test */
